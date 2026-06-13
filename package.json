@@ -1,1 +1,14 @@
-  }
+{
+"name": "werwolf-root",
+"version": "1.0.0",
+"private": true,
+"workspaces": [
+"werwolf-frontend",
+"werwolf-server"
+],
+"scripts": {
+"install-all": "npm install --workspaces",
+"start": "npm start --workspace=werwolf-server",
+"build": "npm run build --workspace=werwolf-frontend"
+}
+}
